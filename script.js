@@ -57,6 +57,7 @@ function init (){
       } else {
          launchStatus.innerHTML = 'Shuttle is Ready for Launch'
          launchStatus.style.color = "green";
+         faultyItems.style.visibility = "hidden";
          event.preventDefault();
       }
    }
