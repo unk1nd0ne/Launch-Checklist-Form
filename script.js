@@ -50,10 +50,14 @@ function init (){
 
          if (fuelLevel.value < 10000) {
             fuelStatus.innerHTML = 'Fuel level too low for launch'
+         } else {
+            fuelStatus.innerHTML = 'Fuel level high enough for launch'
          }
          if (cargoMass.value > 10000){
             cargoStatus.innerHTML = 'Cargo mass too high for launch'
-         } 
+         } else {
+            cargoStatus.innerHTML = 'Cargo mass low enough for launch'
+         }
       } else {
          launchStatus.innerHTML = 'Shuttle is Ready for Launch'
          launchStatus.style.color = "green";
